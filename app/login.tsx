@@ -23,7 +23,7 @@ enum SignInType {
 }
 
 const Page = () => {
-  const [countryCode, setCountryCode] = useState("+49");
+  const [countryCode] = useState("+49");
   const [phoneNumber, setPhoneNumber] = useState("");
   const router = useRouter();
   const { signIn } = useSignIn();
@@ -159,7 +159,7 @@ const Page = () => {
           <Ionicons name="logo-google" size={24} color="#000" />
 
           <Text style={[defaultStyles.buttonText, { color: "#000" }]}>
-            Continue with email
+            Continue with Google
           </Text>
         </TouchableOpacity>
 
@@ -178,7 +178,7 @@ const Page = () => {
           <Ionicons name="logo-apple" size={24} color="#000" />
 
           <Text style={[defaultStyles.buttonText, { color: "#000" }]}>
-            Continue with email
+            Continue with Apple
           </Text>
         </TouchableOpacity>
       </View>
